@@ -23,3 +23,6 @@ Fixed issues:
 Recommendations:
 	- Use an automated autoprefixer to avoid writing prefixed CSS syntax manually.
 	- Use CSS preprocessor and split styles into multiple smaller components.
+	- Design looks outdated.
+	- Cursive typefaces are hard to read. Replace with easier to read typeface.
+	- 

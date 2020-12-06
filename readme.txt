@@ -25,7 +25,7 @@ Below are the items we haven't been able to get to yet.
 
 Slideshow:
   - We need another slide created from the PSD 
-  - The styling isn't right yet for slide content as well
+✓  - The styling isn't right yet for slide content as well
   - We also haven't been able to set up the slide functionality
 
 ✓ Footer:
@@ -35,10 +35,11 @@ Slideshow:
 ✓  - Footer bottom area: we unfortunately can't pull the html content out of its location
 ✓     - Can we style up the setup so it matches the desktop and mobile styles
 
-Responsive:
+ Responsive:
 ✓  - For some reason the site isn't switching over to "mobile" styles in devices
 ✓  - Also when you shrink down the browser some sort of content is causing a horizontal scrollbar in smaller screens
   - In between sizes for tablet portrait feel fairly empty, is there something we can style to make them look better
+	- partially fixed
 
 
 The client is very active in the project and wants a technical breakdown of what you did and how you resolved the missing items. 
