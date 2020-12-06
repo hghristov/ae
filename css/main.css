@@ -657,17 +657,38 @@
         }
     }
 
+    @media (min-width: 36em) {
+        .card-list {
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .card-list > li {
+            width: 50%;
+        }
+    }
+
+    @media (min-width: 48em) {
+        .card-list > li {
+            width: 33.333333%;
+        }
+    }
+
     @media (min-width:64em) {
 
         h2 { font-size:36px; font-size:2.25rem; }
 
         .card-list {
-            display:-webkit-box;
-            display:-ms-flexbox;
-            display:flex;
             margin: 0 -10px;
         }
-        .card-list > li { padding:10px; }
+        .card-list > li { 
+            width: auto;
+            padding:10px; 
+        }
 
         .d-md-inline {
             display: inline;
