@@ -12,15 +12,16 @@ Below are the items we haven't been able to get to yet.
 ✓ Font:
 ✓  - We set up the Allura and Alex Brush font family stacks in the CSS but we don't have the fonts included
 
-✓Site Logos:
+✓ Site Logos:
 ✓  - We need to account for retina screens
 
-✓Icons:
+✓ Icons:
 ✓  - We haven't been able to add the icons to the setup yet
 ✓  - Hamburger menu, cart, and search icons haven't been added
 
-Navigation:
-  - We haven't setup functionality for the menu toggle to open up the bottom footer area in small screens
+✓ Navigation:
+✓  - We haven't setup functionality for the menu toggle to open up the bottom footer area in small screens
+	- Note: there's a typo here, should be "bottom header area".
 
 Slideshow:
   - We need another slide created from the PSD 

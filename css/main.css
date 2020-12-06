@@ -128,7 +128,21 @@
                     justify-content: center;
         }
 
-        .header-bottom { display:none; }
+        .header-bottom { 
+            visibility: hidden;
+
+            max-height: 0;
+            overflow-y: hidden;
+
+            transition: max-height .35s ease-out,
+                        visibility .35s ease-out;
+        }
+
+        .header-bottom.visible {
+            visibility: visible;
+            max-height: 800px;
+
+        }
 
         @media (min-width:64em) {
             .page-header { border:0; }
@@ -176,7 +190,11 @@
                 height:64px;
             }
 
-            .header-bottom { display:block; }
+            .header-bottom { 
+                visibility: visible;
+                max-height: none;
+                overflow-y: inherit;
+            }
             .header-bottom .site-search { display:none; }
         }
 
@@ -618,6 +636,19 @@
             position:relative;
             width:32px;
             height:28px;
+        }
+
+        .menu-toggle.active .bar {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .menu-toggle.active .bar::before {
+            transform: translateY(0) rotate(-90deg);
+        }
+
+        .menu-toggle.active .bar::after {
+            opacity: 0;
+            transform: translateY(0) rotate(-90deg);
         }
 
         .bar {
