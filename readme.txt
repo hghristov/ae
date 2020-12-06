@@ -24,9 +24,9 @@ Below are the items we haven't been able to get to yet.
 	- Note: there's a typo here, should be "bottom header area".
 
 Slideshow:
-  - We need another slide created from the PSD 
+✓  - We need another slide created from the PSD 
 ✓  - The styling isn't right yet for slide content as well
-  - We also haven't been able to set up the slide functionality
+✓  - We also haven't been able to set up the slide functionality
 
 ✓ Footer:
 ✓  - We got a fair amount of responsive styles done for the site however the footer isn't quite there yet

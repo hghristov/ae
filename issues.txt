@@ -19,6 +19,7 @@ Fixed issues:
 		- Bottom footer needed absolute positioning styles.
 	- Fixed newsletter styles for mobile.
 		- Input needed flex-grow.
+	- Added slide functionality.
 	
 Recommendations:
 	- Use an automated autoprefixer to avoid writing prefixed CSS syntax manually.
