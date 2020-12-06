@@ -15,9 +15,9 @@ Below are the items we haven't been able to get to yet.
 ✓Site Logos:
 ✓  - We need to account for retina screens
 
-Icons:
-  - We haven't been able to add the icons to the setup yet
-  - Hamburger menu, cart, and search icons haven't been added
+✓Icons:
+✓  - We haven't been able to add the icons to the setup yet
+✓  - Hamburger menu, cart, and search icons haven't been added
 
 Navigation:
   - We haven't setup functionality for the menu toggle to open up the bottom footer area in small screens
@@ -29,7 +29,7 @@ Slideshow:
 
 Footer:
   - We got a fair amount of responsive styles done for the site however the footer isn't quite there yet
-  - Social media icons need to be setup so some html changes there to put them in is fine.
+✓  - Social media icons need to be setup so some html changes there to put them in is fine.
   - Expander accordion Javascript functionality hasn't been setup or styled
   - Footer bottom area: we unfortunately can't pull the html content out of its location
      - Can we style up the setup so it matches the desktop and mobile styles
