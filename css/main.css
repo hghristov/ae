@@ -209,12 +209,15 @@
         }
 
     /*----- FOOTER -----*/
-        .page-footer { position:relative; }
+        .page-footer { 
+            padding-bottom:20px;
+            position:relative; 
+        }
         .page-footer::before {
             content:" ";
             position:absolute;
             z-index:10;
-            bottom:0; left:-40px; right:-40px;
+            bottom:0; left:0; right:0;
             height:7px;
             background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I4ZDFlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iI2I4ZDFlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iI2Q1ZGM5MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Q1ZGM5MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZWZiYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZWZiYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
             background-image: -webkit-gradient(linear, left top, right top, from(#b8d1ed),color-stop(25%, #b8d1ed),color-stop(25%, #d5dc91),color-stop(50%, #d5dc91),color-stop(50%, #ffefbc),color-stop(75%, #ffefbc),color-stop(75%, #ffcccc));
@@ -225,6 +228,9 @@
         .page-footer h2 {
             font-size:24px;
             font-size:1.5rem;
+        }
+        .page-footer .site-logo img {
+            max-width: 100%;
         }
         .footer-top {
             position:relative;
@@ -280,6 +286,14 @@
         }
 
         @media (min-width:64em) {
+            .page-footer {
+                padding-bottom: 0;
+            }
+            .page-footer::before {
+                left:-40px; 
+                right:-40px;
+            }
+
             .footer-top {
                 margin:0 -40px;
                 padding:0 40px 25px;
