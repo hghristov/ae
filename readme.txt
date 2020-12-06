@@ -12,8 +12,8 @@ Below are the items we haven't been able to get to yet.
 ✓ Font:
 ✓  - We set up the Allura and Alex Brush font family stacks in the CSS but we don't have the fonts included
 
-Site Logos:
-  - We need to account for retina screens
+✓Site Logos:
+✓  - We need to account for retina screens
 
 Icons:
   - We haven't been able to add the icons to the setup yet
@@ -36,7 +36,7 @@ Footer:
 
 Responsive:
 ✓  - For some reason the site isn't switching over to "mobile" styles in devices
-  - Also when you shrink down the browser some sort of content is causing a horizontal scrollbar in smaller screens
+✓  - Also when you shrink down the browser some sort of content is causing a horizontal scrollbar in smaller screens
   - In between sizes for tablet portrait feel fairly empty, is there something we can style to make them look better
 
 
