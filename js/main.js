@@ -4,8 +4,6 @@
     mobileHeaderHandler();
     mobileFooterHandler();
 
-
-
     function mobileHeaderHandler() {
         const button = document.querySelector('.js-nav-toggle'),
               headerBottom = document.querySelector('.header-bottom');

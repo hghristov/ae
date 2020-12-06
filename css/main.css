@@ -311,6 +311,14 @@
             text-transform:uppercase;
         }
 
+        .footer-bottom {
+            width: 100%;
+
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
         .footer-bottom p {
             margin:0 0 .8em;
             color:#999;
@@ -372,6 +380,42 @@
 
             .expander.is--visible .expander__toggle::after {
                 transform: translateY(-50%) rotate(0);
+            }
+
+            .footer-bottom {
+                padding: 0 20px;
+
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+
+                line-height: 2;
+                text-align: center;
+            }
+
+            .footer-bottom .ae-logo {
+                margin: 30px 0 34px 0;
+            }
+
+            .footer-bottom .ae-logo img {
+                margin-right: 0;
+            }
+
+            .footer-bottom .site-logo {
+                padding: 30px 0;
+            }
+
+            .footer-bottom .site-logo img {
+                margin: 0 auto;
+                display: block;
+                max-width: 220px;
+            }
+
+            .footer-bottom .page-footer__column:first-child {
+                order: 2;
             }
         }
 
@@ -439,6 +483,10 @@
         background: linear-gradient(to bottom, #e0e0e0 0%,#ffffff 100%);
         -webkit-box-shadow:0 0 0 1px #f0f0f0, inset 0 0 0 1px #d8d8d8;
                 box-shadow:0 0 0 1px #f0f0f0, inset 0 0 0 1px #d8d8d8;
+    }
+
+    .d-none {
+        display: none;
     }
 
     .svg-legend {
@@ -600,6 +648,14 @@
     }
     .item__price { font-weight:bold; }
 
+    @media (max-width:63.9em) {
+        .social-list {
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+    }
+
     @media (min-width:64em) {
 
         h2 { font-size:36px; font-size:2.25rem; }
@@ -611,6 +667,10 @@
             margin: 0 -10px;
         }
         .card-list > li { padding:10px; }
+
+        .d-md-inline {
+            display: inline;
+        }
     }
 
 
@@ -969,6 +1029,10 @@
         .newsletter__form input {
             margin-right:10px;
             min-width:0;
+            
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
         } 
 
     /*----- COPYRIGHT -----*/

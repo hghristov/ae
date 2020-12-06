@@ -8,10 +8,17 @@ Fixed issues:
 	- Added search icon.
 		- I've used the non-transparent raster icon from the PSD however it would be best if a vector icon was provided or at least a high-res transparent PNG version of this icon.
 	- Updated slider content breakpoint styles.
-	- Added social media icons.
-	- Added cart icon.
+	- Added social media icons using the provided SVG sprite.
+	- Added cart icon using the provided SVG sprite.
 	- Added hamburger icon.
+		- Used a span & CSS pseudo-elements so each element can be animated.
 	- Added mobile navigation toggler js.
+	- Added mobile footer styles & js.
+		- Added "plus" icon using css pseudo-elements.
+	- Fixed footer styles for desktop & mobile.
+		- Bottom footer needed absolute positioning styles.
+	- Fixed newsletter styles for mobile.
+		- Input needed flex-grow.
 	
 Recommendations:
 	- Use an automated autoprefixer to avoid writing prefixed CSS syntax manually.

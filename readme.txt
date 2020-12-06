@@ -28,12 +28,12 @@ Slideshow:
   - The styling isn't right yet for slide content as well
   - We also haven't been able to set up the slide functionality
 
-Footer:
-  - We got a fair amount of responsive styles done for the site however the footer isn't quite there yet
+✓ Footer:
+✓  - We got a fair amount of responsive styles done for the site however the footer isn't quite there yet
 ✓  - Social media icons need to be setup so some html changes there to put them in is fine.
-  - Expander accordion Javascript functionality hasn't been setup or styled
-  - Footer bottom area: we unfortunately can't pull the html content out of its location
-     - Can we style up the setup so it matches the desktop and mobile styles
+✓  - Expander accordion Javascript functionality hasn't been setup or styled
+✓  - Footer bottom area: we unfortunately can't pull the html content out of its location
+✓     - Can we style up the setup so it matches the desktop and mobile styles
 
 Responsive:
 ✓  - For some reason the site isn't switching over to "mobile" styles in devices
