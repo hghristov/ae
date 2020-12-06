@@ -605,12 +605,26 @@
         }
 
         .slide__content {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
             position:absolute;
-            top:0; height:100%; right:75px;
+            top:0; 
+            height:100%; 
+            left:0;
             padding:10px;
-            width:300px;
+            width:100%;
             text-align:center;
             line-height:1.1;
+        }
+        .cta {
+            max-width: 300px;
+            display: block;
         }
         .cta:hover, .cta:focus { text-decoration:none; }
         .cta__title { 
@@ -626,6 +640,15 @@
             font-family:"Alex Brush", cursive;
             font-size:24px;
             font-size:1.5rem;
+        }
+
+        @media (min-width:48em) {
+            .slide__content {
+                position:absolute;
+                top:0; height:100%; right:75px;
+                left: auto;
+                width:300px;
+            }
         }
 
         @media (min-width:64em) {
