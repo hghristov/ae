@@ -138,10 +138,15 @@
                         visibility .35s ease-out;
         }
 
-        .header-bottom.visible {
+        /* 
+            Pure CSS slide up/down animation. 
+            Cons: 
+                - requires hardcoded max-height
+                - timing is inconsistent due to variable content height
+        */
+        .header-bottom.is--visible {
             visibility: visible;
             max-height: 800px;
-
         }
 
         @media (min-width:64em) {
@@ -284,7 +289,15 @@
             background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,0) 85%,rgba(255,255,255,1) 100%), linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0) 100%), linear-gradient(-135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 10%,rgba(255,255,255,0) 100%);
         }
 
-        .footer-top .page-footer__column { max-width:224px; }
+        .footer-top .page-footer__column { 
+            width: 100%;
+        }
+
+        .expander__panel {
+            transition: visibility .35s ease-out,
+                        max-height .35s ease-out;
+        }
+
         .page-footer__column h2,
         .page-footer__column .wysiwyg h2 {
             margin-top:25px;
@@ -301,6 +314,65 @@
         .footer-bottom p {
             margin:0 0 .8em;
             color:#999;
+        }
+
+        @media (max-width: 63.9em) {
+            .page-footer__column + .page-footer__column {
+                border-top: 1px solid #e2e2e2;
+            }
+
+            .page-footer__column .expander__toggle {
+                margin-top: .5em;
+            }
+
+            .expander__panel {
+                visibility: hidden;
+                max-height: 0;
+                overflow-y: hidden;
+            }
+
+            .expander__toggle {
+                position: relative;
+            }
+
+            .expander__toggle::before,
+            .expander__toggle::after {
+                content: '';
+                background-color: #85a1bf;
+                display: block;
+
+                width: 20px;
+                height: 2px;
+
+                position: absolute;
+                top: 50%;
+                right: 0;
+
+                transition: transform .2s ease-out;
+            }
+
+            .expander__toggle::before {
+                transform: translateY(-50%);
+            }
+
+            .expander__toggle::after {
+                transform: translateY(-50%) rotate(90deg);
+            }
+
+            /* 
+                Pure CSS slide up/down animation. 
+                Cons: 
+                    - requires hardcoded max-height
+                    - timing is inconsistent due to variable content height
+            */
+            .expander.is--visible .expander__panel {
+                visibility: visible;
+                max-height: 400px;
+            }
+
+            .expander.is--visible .expander__toggle::after {
+                transform: translateY(-50%) rotate(0);
+            }
         }
 
         @media (min-width:64em) {
@@ -329,6 +401,10 @@
                 margin:0 auto;
                 width:222px;
                 height:42px;
+            }
+
+            .footer-top .page-footer__column  {
+                max-width:224px;
             }
         }
 
@@ -638,15 +714,15 @@
             height:28px;
         }
 
-        .menu-toggle.active .bar {
+        .menu-toggle.is--active .bar {
             transform: translate(-50%, -50%) rotate(45deg);
         }
 
-        .menu-toggle.active .bar::before {
+        .menu-toggle.is--active .bar::before {
             transform: translateY(0) rotate(-90deg);
         }
 
-        .menu-toggle.active .bar::after {
+        .menu-toggle.is--active .bar::after {
             opacity: 0;
             transform: translateY(0) rotate(-90deg);
         }
