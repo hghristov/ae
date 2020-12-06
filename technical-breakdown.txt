@@ -1,0 +1,7 @@
+Fixed issues:
+	- As stated in the assignment, the fonts are used in the CSS but no webfonts were included in the project. I've added webfonts from fonts.google.com.
+	- There was a syntax error in the bottom of the CSS file which I've fixed.
+	- The page was missing its viewport meta tag, which is why the site looked tiny on mobile devices. The tag has been added and the issue has been resolved.
+	- pseudo-elements in CSS were using single colon instead of double colon. Both syntaxes work in browsers however it's considered good practise to use :: for pseudo-elements.
+	- 
+	

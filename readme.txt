@@ -9,8 +9,8 @@ The client is very particular about having fast page speed, good SEO, and wants 
 Support wise they also want to have this page look right in browsers that are over 5% of the browser stats for the US over the past couple of months
 Below are the items we haven't been able to get to yet.
 
-Font:
-  - We set up the Allura and Alex Brush font family stacks in the CSS but we don't have the fonts included
+✓ Font:
+✓  - We set up the Allura and Alex Brush font family stacks in the CSS but we don't have the fonts included
 
 Site Logos:
   - We need to account for retina screens
@@ -35,7 +35,7 @@ Footer:
      - Can we style up the setup so it matches the desktop and mobile styles
 
 Responsive:
-  - For some reason the site isn't switching over to "mobile" styles in devices
+✓  - For some reason the site isn't switching over to "mobile" styles in devices
   - Also when you shrink down the browser some sort of content is causing a horizontal scrollbar in smaller screens
   - In between sizes for tablet portrait feel fairly empty, is there something we can style to make them look better
 
