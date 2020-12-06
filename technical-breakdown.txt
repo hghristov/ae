@@ -25,4 +25,5 @@ Recommendations:
 	- Use CSS preprocessor and split styles into multiple smaller components.
 	- Design looks outdated.
 	- Cursive typefaces are hard to read. Replace with easier to read typeface.
-	- 
+	- Improve code formatting.
+	- Add IE11 support for slider.
