@@ -8,6 +8,8 @@ Fixed issues:
 	- Added search icon.
 		- I've used the non-transparent raster icon from the PSD however it would be best if a vector icon was provided or at least a high-res transparent PNG version of this icon.
 	- Updated slider content breakpoint styles.
+	- Added social icons.
 	
 Recommendations:
 	- Use an automated autoprefixer to avoid writing prefixed CSS syntax manually.
+	- Use CSS preprocessor and split styles into multiple smaller components.
