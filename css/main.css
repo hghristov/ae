@@ -668,7 +668,7 @@
 
     /*----- NEWSLETTER FORM -----*/
 
-        .newsletter p { font-style:italic; 
+        .newsletter p { font-style:italic; }
 
         .newsletter__form {
             display:-webkit-box;
