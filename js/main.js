@@ -1,5 +1,7 @@
 'use strict';
 
+// recommendation: run JS through Babel for IE11 support
+
 (function() {
     mobileHeaderHandler();
     mobileFooterHandler();
@@ -8,7 +10,7 @@
         const button = document.querySelector('.js-nav-toggle'),
               headerBottom = document.querySelector('.header-bottom');
               
-        const clickHandler = (e) => {
+        const clickHandler = e => {
             e.preventDefault();
 
             headerBottom.classList.toggle('is--visible');
@@ -21,7 +23,7 @@
     function mobileFooterHandler() {
         const toggle = document.querySelectorAll('.expander__toggle');
 
-        const clickHandler = (e) => {
+        const clickHandler = e => {
             const parent = e.target.parentNode;
 
             parent.classList.toggle('is--visible');
